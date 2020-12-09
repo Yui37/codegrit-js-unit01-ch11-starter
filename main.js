@@ -24,13 +24,15 @@ close.addEventListener('click', modalClose);
 
 // モーダル以外がクリックされた時に閉じる関数 ifを使う
 function anotherClose() {
-    if (){
+    if (
+        modal.style.display === "block"|| modal.style.display === "none"
+    ){
         modal.style.display = "none";
     }else{
         modal.style.display = "block";
     }
 }
-
+console.log(anotherClose);
 // モーダル以外の場所クリックのイベントリスナー
 modal.addEventListener('click', anotherClose);
 
